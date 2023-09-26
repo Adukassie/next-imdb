@@ -1,10 +1,16 @@
-import React from "react";
+// import React from "react";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import { AiFillHome, AiOutlineSearch } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import MenuItem from "./MenuItem";
 import Link from "next/link";
+import DarkModeSwitch from "./DarkModeSwitch";
+
 
 function Header() {
+  
+
   return (
     <div className="flex items-center justify-between mx-2 max-w-6xl sm:mx-auto ">
       <div className="flex m-5">
@@ -12,8 +18,11 @@ function Header() {
         <MenuItem title="ABOUT" address="/about" Icon={BsFillInfoCircleFill} />
       </div>
       <input className="bg-gray-200 " type="text" />
-      <AiOutlineSearch/>
-      <div className="">
+      <AiOutlineSearch />
+      <div className="flex items-center space-x-5">
+        <DarkModeSwitch
+         
+        />
         <Link href="/" className="">
           <h2 className="text-2xl ">
             <span className="font-bold bg-amber-300">IMDb</span>

@@ -1,6 +1,5 @@
 // import React from "react";
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+
 import { AiFillHome, AiOutlineSearch } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import MenuItem from "./MenuItem";

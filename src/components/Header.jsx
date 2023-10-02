@@ -13,13 +13,13 @@ function Header() {
         <MenuItem title="HOME" address="/" Icon={AiFillHome} />
         <MenuItem title="ABOUT" address="/about" Icon={BsFillInfoCircleFill} />
       </div>
-      <div className="flex items-center">
+      {/* <div className="flex items-center">
         <input
           className="bg-gray-200 w-300 mx-0 rounded-tl-md rounded-bl-md"
           type="text"
         />
         <AiOutlineSearch className="bg-gray-200 h-6 text-black rounded-tr-md rounded-br-md cursor-pointer font-medium" />
-      </div>
+      </div> */}
 
       <div className="flex items-center space-x-5">
         <DarkModeSwitch />

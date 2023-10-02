@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FiThumbsUp } from "react-icons/fi";
+import { FiThumbsDown, FiThumbsUp } from "react-icons/fi";
 
 export default function Card({ result }) {
   return (
@@ -28,6 +28,8 @@ export default function Card({ result }) {
           <p className="flex items-center">
             {result.release_date || result.first_air_date}
             <FiThumbsUp className="h-5 mr-1 ml-3" /> {result.vote_count}
+            <FiThumbsDown className="h-5 mr-1 ml-3" />
+           
           </p>
         </div>
       </Link>
